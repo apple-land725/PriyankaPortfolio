@@ -1,0 +1,440 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Portfolio/Resume </title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="{% static 'assets/fontawesome/js/all.js' %}"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="{% static 'assets/plugins/github-calendar/dist/github-calendar-responsive.css' %}">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="{% static 'assets/plugins/github-activity/src/github-activity.css' %}">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+    
+    
+		            <img class="profile-image img-fluid float-start rounded-circle" src="{% static 'assets/images/projects/profile.png' %}" alt="profile image" />
+		            <div class="profile-content">
+		                <h1 class="name">Priyanka Kori</h1>
+		                <h2 class="desc">Web App Developer</h2>   
+		                <ul class="social list-inline">
+		                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/priyanka7492725/"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>    
+		                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
+		                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->
+	                <a class="btn btn-cta-primary" href="{% url 'contact' %}" ><i class="fas fa-paper-plane"></i> Contact or Hire Me</a>        
+	            </div><!--//col-->
+	        </div><!--//row-->         
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p style="text-align: justify;">I am a Web App Developer with a specialization in front-end development.
+                             I am thrilled to be here and have the opportunity to share a bit about my background and experiences 
+                            in the world of web development. But what truly sets me apart is my ability to bridge the gap between design and functionality. As a frontend developer,
+                             I understand the importance of not just how a website looks, but also how it works. This perspective, coupled with my Django expertise,
+                             empowers me to build end-to-end solutions that deliver exceptional user experiences.
+                           I take great pride in building seamless user interfaces
+                            that look stunning and provide an enjoyable and intuitive user experience. I have a solid understanding of HTML, CSS, and
+                            JavaScript, which allows me to create responsive and accessible designs that adapt to different screen sizes
+                            and devices. Thank You!</p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="#" target="_blank">
+    
+    
+                                    <img class="img-fluid project-image rounded shadow-sm" src="{% static 'assets/images/projects/project.png' %}" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="title mb-3"><a href="#" target="_blank">LMS - Learning Management Wesite</a></h3>
+                                    
+                                <div class="desc text-start">                                    
+                                    <p style="text-align: justify;">The LMS (Learning Management System) portal is a comprehensive online platform designed to facilitate education 
+                                        and training. It provides a centralized hub for instructors and learners to access and manage course materials, 
+                                        assignments, assessments, and communication. The portal enables educators to create, organize, and deliver content,
+                                         while learners can engage with the material, track their progress, and collaborate with peers. With features like
+                                          discussion forums, real-time feedback, and assessment tools, the LMS learning portal 
+                                        enhances the educational experience by fostering interaction, convenience, and effective learning outcomes.</p>
+                                    <p><b>This project is still not completed, so it will not show.</b></p>
+                                </div><!--//desc-->         
+                                <a class="btn btn-cta-secondary" href="#" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                 
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#" target="_blank">
+    
+    
+                                <img class="img-fluid project-image rounded shadow-sm" src="{% static 'assets/images/projects/project-1.jpg' %}" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="#" target="_blank">CoderPro -  Software Project</a></h3>
+                                    <p class="mb-2">******************This project is still not completed, so it will not show
+                                        ****************.</p>
+                                    <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#" target="_blank">
+    
+    
+                                <img class="img-fluid project-image rounded shadow-sm" src="{% static 'assets/images/projects/project-2.jpg' %}" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="#" target="_blank">DevCard - Software </a></h3>
+                                    <p class="mb-2">*******************This project is still not completed, so it will not show
+                                        ****************************.</p>
+                                    <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                             <div class="item row">
+                                <a class="col-md-4 col-12" href="#" target="_blank">
+    
+    
+                                <img class="img-fluid project-image rounded shadow-sm" src="{% static 'assets/images/projects/project-3.jpg' %}" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="#" target="_blank">Instance </a></h3>
+                                    <p class="mb-2">********************This project is still not completed, so it will not show
+                                        ***********************.</p>
+                                    <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#" target="_blank">
+    
+    
+                                <img class="img-fluid project-image rounded shadow-sm" src="{% static 'assets/images/projects/project-4.jpg' %}" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="#" target="_blank">Nova Pro </a></h3>
+                                    <p class="mb-2">***************This project is still not completed, so it will not show
+                                        ********************************.</p>
+                                    <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#" target="_blank">
+    
+    
+                                <img class="img-fluid project-image rounded shadow-sm" src="{% static 'assets/images/projects/project-5.jpg' %}" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="#" target="_blank">DevStudio </a></h3>
+                                    <p class="mb-2"> *****************This project is still not completed, so it will not show
+                                        ***********************.</p>
+                                    <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
+             <!--Message or MyChat section is blank-->
+                
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Fresher<span class="place"><a href="#">-</a></span> <span class="year">(0 Year Experience)</span></h3>
+                                <p>I am an enthusiastic fresher eager to embark on a professional journey, seeking opportunities to contribute and grow within a company that values skill enhancement, knowledge acquisition, and personal development. My mindset is open to exploring a diverse range of roles that can provide valuable insights and broaden my perspective.</p>
+                            <p>Excitement fills me as I introduce myself and share my background in the realm of web development. What truly sets me apart is my unique ability to bridge the gap between design and functionality. Operating as a frontend developer, I comprehend not only the visual aesthetics of a website, but also its operational dynamics. This distinctive viewpoint, combined with my proficiency in Django,
+                             empowers me to craft holistic solutions that yield outstanding user experiences.</p>
+                            <p>A major source of pride for me lies in constructing seamless user interfaces characterized by their aesthetic appeal and intuitive interaction. Proficiency in HTML, CSS, and JavaScript equips me to design responsive and accessible layouts adaptable to various screen dimensions and devices.</p>
+                            <p>
+                                    
+                                Thank you for considering my profile. I look forward to the prospect of contributing to a team that values innovation, user-centric design, and professional growth.</p>  
+                        </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+               
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Sagar, Madhya Pradesh, INDIA</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">koripriyanka49@gmail.com</a></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-plus" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                    <path fill-rule="evenodd" d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z"/>
+                                  </svg><span class="sr-only">Contact:&nbsp; </span>&nbsp;<a href="#">&nbsp; +91 7067356873</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div>                  <!--//section-inner------->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Hey, I'm a frontend developer and Django enthusiast. From polished interfaces to dynamic web apps,
+                                 I'm your go-to. HTML, CSS, JavaScript, and Django are my tools of choice.
+                                 I'm excited to collaborate on projects that require a blend of creativity, technical prowess, and a deep appreciation for user-centered design.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Django Web Framework<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                               
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; SQL<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="94"></div>
+									</div><!--//level-bar-->                                   
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, SASS, PHP &amp; Bootstrap<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Frontend Development<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                                
+                                <p><a class="more-link" href="https://www.linkedin.com/in/priyanka7492725/"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+            <!--<aside class="testimonials aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                </blockquote>                
+                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                            </div>    
+                            
+                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                            
+                        </div><!--//content-->
+                    <!--</div><!--//section-inner-->
+                <!--</aside><!--//section---->
+                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> M.Tech (Artificial Intelligence & Machine Learning)</h3>
+                                <h4 class="university"> Technocrats Institute of Technology (Excellence), Bhopal, MP, INDIA     <span class="year">Pursuing (2023-2025)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i>B.Tech (Computer Science Engineering)</h3>
+                                <h4 class="university">Lakshmi Narain College of Technology, - LNCT Jabalpur, MP, INDIA <span class="year">(2019-2023)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Hindi:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <!--Blog section is blank -->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">DevTown Bootcamp Certificates</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-graduation-cap"></i> <a href="https://drive.google.com/drive/folders/1ZnyGWyMccA21QEPTCu3ugD15yjYXJtBv?usp=drive_link">Appreciation Certificate</a></li>
+                                <li><i class="fas fa-graduation-cap"></i> <a href="https://drive.google.com/drive/folders/1ZnyGWyMccA21QEPTCu3ugD15yjYXJtBv?usp=drive_link">Backend Web development</a></li>
+                                <li><i class="fas fa-graduation-cap"></i> <a href="https://drive.google.com/drive/folders/1ZnyGWyMccA21QEPTCu3ugD15yjYXJtBv?usp=drive_link">Front-end Web Development</a></li>
+                                <li><i class="fas fa-graduation-cap"></i> <a href="https://drive.google.com/drive/folders/1ZnyGWyMccA21QEPTCu3ugD15yjYXJtBv?usp=drive_link">Hotstar Clone </a></li>
+                                <li><i class="fas fa-graduation-cap"></i> <a href="https://drive.google.com/drive/folders/1ZnyGWyMccA21QEPTCu3ugD15yjYXJtBv?usp=drive_link">Python & Artificial Intelligence </a></li>
+                                <li><i class="fas fa-graduation-cap"></i> <a href="https://drive.google.com/drive/folders/1ZnyGWyMccA21QEPTCu3ugD15yjYXJtBv?usp=drive_link">Cloud Computing with AWS </a></li>
+                                <li><i class="fas fa-graduation-cap"></i> <a href="https://drive.google.com/drive/folders/1ZnyGWyMccA21QEPTCu3ugD15yjYXJtBv?usp=drive_link">Python </a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list conferences aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Training</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-graduation-cap"></i> <a href="#" target="_blank">Internshala</a>(Web Development) </li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="#">Online</a> (June-August 2023)</li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        
+                        <div class="content">
+                            
+                            
+                            
+                            <h5 class="subheading pt-3">Do you want my resume?</h5>
+                            <p>Chect out <a href="https://drive.google.com/file/d/17aGiA1oznL4VS3dQCNEzj9ZRKBnUGN5Z/view?usp=sharing">my resume </a>for your review and kindly request your assessment of its contents. </p>
+                            <p style="text-align: justify;">Your expertise in evaluating its components would be greatly appreciated. Thank you in advance for your time and consideration.</p> 
+                            
+                            <a class="btn btn-cta-primary btn-download" href="https://drive.google.com/file/d/17aGiA1oznL4VS3dQCNEzj9ZRKBnUGN5Z/view?usp=sharing"  target="_blank"><i class="fas fa-download"></i> I want to download</a>
+                            
+                        
+                             <p>If you have any inquiries or requests, please reach out to me by sending an email.</p>
+                             <p>E-mail: <a href="#"> priyankakori72518@gmail.com </a></p>
+                             <a class="btn btn-cta-secondary btn-follow" href="https://mail.google.com"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 18 18">
+                                <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                                <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                              </svg> Send E-Mail</a>
+
+                              <hr>
+                            <h2 class="heading">Credits</h2>
+                            <ul class="list-unstyled pb-2">
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                
+                                <li><a href="https://github.com/coliff/dark-mode-switch"><i class="fas fa-external-link-alt"></i>Dark Mode Switch</a></li>
+                                
+                            </ul>
+                             </hr>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> | by <a href="#" target="_blank">Priyanka_Kori</a> </small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    
+    
+    <script type="text/javascript" src="{% static 'assets/plugins/popper.min.js' %}"></script> 
+    
+    
+    <script type="text/javascript" src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>    
+    
+    
+    <script type="text/javascript" src="{% static 'assets/plugins/vanilla-rss/dist/rss.global.min.js' %}"></script> 
+    
+    
+    <script type="text/javascript" src="{% static 'assets/plugins/dark-mode-switch/dark-mode-switch.min.j' %}s"></script> 
+    <!-- github calendar plugin -->
+    
+    
+    <script type="text/javascript" src="{% static 'assets/plugins/github-calendar/dist/github-calendar.min.js' %}"></script>
+    <!-- github activity plugin -->
+    
+    
+    
+    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    
+    
+    <script type="text/javascript" src="{% static 'assets/plugins/github-activity/src/github-activity.js' %}"></script>
+    <!-- custom js -->
+    
+    
+    <script type="text/javascript" src="{% static 'assets/js/main.js' %}"></script>            
+</body>
+</html> 
+
